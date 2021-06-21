@@ -64,7 +64,7 @@ export default function Chart({ data: { confirmed, recovered, deaths }, country 
     )
     return (
         <div className={styles.container}>
-            <Typography variant="h2">{country}</Typography>
+            {/* <Typography variant="h2">{country}</Typography> */}
             {country ? barChart : lineChart}
         </div>
     )

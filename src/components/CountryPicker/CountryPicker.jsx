@@ -18,7 +18,7 @@ const [fetchedCountries,setFetchedCountries] = useState([])
     return (
         <FormControl className={styles.formControl}>
             <NativeSelect defaultValue="global" onChange={(e)=>handelChange(e.target.value)}  >
-<option value="global"> 
+<option value=""> 
 Global
 </option>
 {

@@ -7,6 +7,8 @@ import cx from 'classnames';
 export default function Cards({data:{confirmed,recovered,deaths,lastUpdate}}) {
     if(!confirmed){
         return "Loading..."
+    }else{
+
     }
     // console.log(props);
     return (

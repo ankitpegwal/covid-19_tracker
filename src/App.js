@@ -2,7 +2,7 @@ import { Cards, Chart, CountryPicker } from './components'
 import styles from './App.module.css'
 import { fetchData } from './api'
 import React from 'react'
-
+import pic from './ima/image.png'
 class App extends React.Component {
   state = {
     data: {},
@@ -32,7 +32,7 @@ console.log(fetchedData);
     // console.log(this.state.data);
     return (
       <div className={styles.container}>
-
+<img className={styles.image} src={pic} />
         <Cards data={data} />
         <CountryPicker handelChange={this.handelChange} />
         <Chart  data={data} country={country} />
